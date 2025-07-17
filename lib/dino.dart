@@ -66,13 +66,11 @@ class Dino extends GameObject {
     } catch (_) {
       currentSprite = dino[0];
     }
-    try{
+    try {
       elapsedTimeSeconds = (elapsedTime! - lastUpdate).inMilliseconds / 1000;
-    }
-    catch(_){
+    } catch (_) {
       elapsedTimeSeconds = 0;
     }
-    
 
     dispY += velY * elapsedTimeSeconds;
     if (dispY <= 0) {

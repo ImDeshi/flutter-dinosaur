@@ -7,10 +7,6 @@ import 'dino.dart';
 import 'game_object.dart';
 import 'ground.dart';
 import 'constants.dart';
-import 'package:provider/provider.dart';
-import 'models/game_state_manager.dart';
-import 'screens/shop_screen.dart';
-import 'widgets/game_ui_overlay.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +22,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitUp,
     ]);
     return const MaterialApp(
-      title: 'Dino Run',
+      title: 'Tung Tung Run',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
